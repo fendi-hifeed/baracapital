@@ -1,0 +1,61 @@
+.footer {
+    background-color: var(--color-bg-alt);
+    padding: 4rem 0 2rem;
+    border-top: 1px solid var(--color-border);
+}
+
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.topSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand h3 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.links a {
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--color-primary);
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.disclaimer {
+    padding-top: 3rem;
+    border-top: 1px solid var(--color-border);
+}
+
+.disclaimer h5 {
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    color: var(--color-text-muted);
+    margin-bottom: 1rem;
+}
+
+.disclaimer p {
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    line-height: 1.8;
+    text-transform: uppercase;
+    max-width: 1000px;
+}
+
+.bottomSection {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+}

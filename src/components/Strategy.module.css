@@ -1,0 +1,79 @@
+.strategySection {
+    background-color: var(--color-bg-alt);
+}
+
+.strategyContainer {
+    display: flex;
+    gap: 5rem;
+}
+
+@media (max-width: 900px) {
+    .strategyContainer {
+        flex-direction: column;
+        gap: 3rem;
+    }
+}
+
+.intro {
+    flex: 1;
+}
+
+.intro h2 {
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+    line-height: 1.1;
+}
+
+.intro p {
+    color: var(--color-text-muted);
+    font-size: 1.05rem;
+    max-width: 450px;
+}
+
+.cardList {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.card {
+    background-color: var(--color-bg);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    border: 1px solid var(--color-border);
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    font-size: 0.75rem;
+    font-family: var(--font-body);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.tag {
+    color: var(--color-text);
+}
+
+.type {
+    background-color: var(--color-border);
+    padding: 0.2rem 0.6rem;
+    border-radius: 100px;
+    color: var(--color-text-muted);
+}
+
+.card h3 {
+    font-size: 1.8rem;
+    margin: 0;
+}
