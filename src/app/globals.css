@@ -47,7 +47,6 @@ ul {
   list-style: none;
 }
 
-/* Utilities */
 .container {
   max-width: var(--max-width);
   margin: 0 auto;
@@ -55,14 +54,13 @@ ul {
 }
 
 .section {
-  padding: 6rem 0;
+  padding: 5rem 0;
 }
 
 .text-center {
   text-align: center;
 }
 
-/* Smooth fade in animation */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
@@ -70,4 +68,20 @@ ul {
 
 .animate-fade-in {
   animation: fadeIn 0.8s ease-out forwards;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+  
+  .section {
+    padding: 4rem 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .section {
+    padding: 3rem 0;
+  }
 }

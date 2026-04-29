@@ -1,13 +1,48 @@
 import styles from "./page.module.css";
-import Navbar from "@/components/Navbar";
 
-const dummyCompanies = [
-    { name: "10k Science", tags: ["Pre-Seed", "United States"], desc: "" },
-    { name: "15five", tags: ["Series C", "United States", "B2B"], desc: "Operator of a performance management platform intended to create effective..." },
-    { name: "1huddle", tags: ["Series A", "United States", "B2B"], desc: "Developer of a game-based workforce training platform designed to onboard,..." },
-    { name: "21 Market", tags: ["Pre-Seed", "Brazil"], desc: "Developer of an e-commerce platform designed to inspect electronic device..." },
-    { name: "Canva", tags: ["Series E", "Australia", "Design"], desc: "Online design and publishing tool." },
-    { name: "Solana", tags: ["Web3", "Global"], desc: "High-performance blockchain supporting builders." },
+const projects = [
+    {
+        name: "MBG - Makan Bergizi Gratis",
+        tags: ["Program Pemerintah", "Batch 1"],
+        desc: "Program Makan Bergizi Gratis untuk mendukung ketahanan pangan nasional.",
+        nilai: "Rp 500Jt - 2M",
+        return: "Sesuai skema"
+    },
+    {
+        name: "Corporate Affairs Award (Astra)",
+        tags: ["Corporate", "Event"],
+        desc: "Corporate Affairs Award oleh Astra International.",
+        nilai: "Rp 300Jt",
+        return: "8%"
+    },
+    {
+        name: "Padel Event by Blibli",
+        tags: ["Sports", "Event"],
+        desc: "Event Padel yang diselenggarakan oleh Blibli.",
+        nilai: "Rp 350Jt",
+        return: "4% (2 bulan)"
+    },
+    {
+        name: "Mayo Collection (Denim)",
+        tags: ["Fashion", "UMKM"],
+        desc: "Brand denim lokal dengan potensi pertumbuhan tinggi.",
+        nilai: "Rp 210Jt",
+        return: "3-5%/bulan (6 bulan)"
+    },
+    {
+        name: "POLARIS Konstruksi (Kalbe Farma)",
+        tags: ["Konstruksi", "Healthcare"],
+        desc: "Proyek konstruksi untuk divisi healthcare Kalbe Farma.",
+        nilai: "Rp 500Jt",
+        return: "5% (2.5 bulan)"
+    },
+    {
+        name: "Fiber Optic (Huawei)",
+        tags: ["Telekomunikasi", "Infrastruktur"],
+        desc: "Proyek infrastruktur telekomunikasi Fiber Optic.",
+        nilai: "10 Juta USD",
+        return: "Sesuai skema"
+    }
 ];
 
 export default function Portfolio() {
@@ -16,62 +51,53 @@ export default function Portfolio() {
             <section className={styles.heroBanner}>
                 <div className={`container ${styles.bannerContainer}`}>
                     <div>
-                        <h5 className={styles.eyebrow}>PORTFOLIO</h5>
-                        <h1 className={styles.title}>Turning global potential into performance</h1>
+                        <h5 className={styles.eyebrow}>PROYEK AKTIF</h5>
+                        <h1 className={styles.title}>Pipeline Proyek Bara Capital</h1>
                         <p className={styles.subtitle}>
-                            We invest across sectors, geographies and markets where capital and our unique global
-                            networks and resources may unlock the potential of entrepreneurs to drive uncommon
-                            outcomes.
+                            Berikut beberapa proyek yang sedang dalam proses seleksi atau sudah 
+                            mendapat pembiayaan dari Bara Capital. Investasi dimulai dari 
+                            Rp 500 Juta hingga Rp 2 Miliar per proyek.
                         </p>
-                    </div>
-                    <div className={styles.graphic}>
-                        {/* Minimal SVG Graphic representing global circles similar to 500.co */}
-                        <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <ellipse cx="100" cy="100" rx="30" ry="80" stroke="white" strokeWidth="1" />
-                            <ellipse cx="100" cy="100" rx="50" ry="80" stroke="white" strokeWidth="1" />
-                            <ellipse cx="100" cy="100" rx="70" ry="80" stroke="white" strokeWidth="1" />
-                            <circle cx="100" cy="100" r="80" stroke="white" strokeWidth="1" />
-                        </svg>
                     </div>
                 </div>
             </section>
 
             <div className={`container ${styles.mainContent}`}>
-                <aside className={styles.sidebar}>
-                    <div className={styles.filterGroup}>
-                        <h3>Industries</h3>
-                        <ul>
-                            <li><input type="checkbox" checked readOnly /> All <span>2226</span></li>
-                            <li><input type="checkbox" /> 3D Printing <span>2</span></li>
-                            <li><input type="checkbox" /> AI/Machine Learning <span>131</span></li>
-                            <li><input type="checkbox" /> Accounting <span>9</span></li>
-                        </ul>
-                        <button className={styles.clearBtn}>Clear filters</button>
+                <div className={styles.stats}>
+                    <div className={styles.statItem}>
+                        <h3>{projects.length}</h3>
+                        <p>Proyek Aktif</p>
                     </div>
-
-                    <div className={styles.filterGroup}>
-                        <h3>Regions</h3>
-                        <ul>
-                            <li><input type="checkbox" checked readOnly /> All <span>2226</span></li>
-                            <li><input type="checkbox" /> Africa <span>19</span></li>
-                            <li><input type="checkbox" /> Americas - United States <span>1</span></li>
-                        </ul>
-                        <button className={styles.clearBtn}>Clear filters</button>
+                    <div className={styles.statItem}>
+                        <h3>12</h3>
+                        <p>Total Pipeline</p>
                     </div>
-                </aside>
+                    <div className={styles.statItem}>
+                        <h3>Rp 500Jt - 2M</h3>
+                        <p>Rentang Nilai</p>
+                    </div>
+                </div>
 
                 <section className={styles.listings}>
                     <div className={styles.listHeader}>
-                        <h2>Portfolio Companies</h2>
+                        <h2>Daftar Proyek</h2>
                     </div>
-                    <div className={styles.companyList}>
-                        {dummyCompanies.map((company, index) => (
-                            <div key={index} className={styles.companyCard}>
-                                <div className={styles.companyInfo}>
-                                    <h3>{company.name}</h3>
-                                    {company.desc && <p className={styles.desc}>{company.desc} <span>Show more</span></p>}
+                    <div className={styles.projectList}>
+                        {projects.map((project, index) => (
+                            <div key={index} className={styles.projectCard}>
+                                <div className={styles.projectInfo}>
+                                    <h3>{project.name}</h3>
+                                    <p className={styles.desc}>{project.desc}</p>
+                                    <div className={styles.meta}>
+                                        <span className={styles.nilai}>
+                                            <strong>Nilai:</strong> {project.nilai}
+                                        </span>
+                                        <span className={styles.returnRate}>
+                                            <strong>Est. Return:</strong> {project.return}
+                                        </span>
+                                    </div>
                                     <div className={styles.tags}>
-                                        {company.tags.map((tag, i) => (
+                                        {project.tags.map((tag, i) => (
                                             <span key={i} className={styles.tag}>{tag}</span>
                                         ))}
                                     </div>

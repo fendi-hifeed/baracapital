@@ -7,13 +7,13 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair" });
 
 export const metadata = {
-  title: "Bara Capital | Investing in Global Potential",
-  description: "Bara Capital is an investment firm driving uncommon outcomes across sectors.",
+  title: "Bara Capital | Platform Investasi & Pembiayaan Pengusaha Muda",
+  description: "Bara Capital adalah platform investasi dan pembiayaan yang memberdayakan pengusaha muda Jawa Barat untuk naik kelas melalui akses permodalan yang terstruktur, transparan, dan profesional.",
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="id">
       <body className={`${inter.variable} ${playfair.variable}`}>
         <Navbar />
         <main>{children}</main>

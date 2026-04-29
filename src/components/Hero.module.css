@@ -1,9 +1,9 @@
 .hero {
     position: relative;
-    min-height: 80vh;
+    min-height: 90vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(135deg, #f0f4f8 0%, #d9e2ec 50%, #bcccdc 100%);
+    background: linear-gradient(135deg, var(--color-primary) 0%, #1a3a5c 50%, #0d2540 100%);
     overflow: hidden;
     padding-top: var(--header-height);
 }
@@ -15,19 +15,14 @@
     left: -50%;
     width: 200%;
     height: 200%;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 70%);
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 70%);
     animation: rotate 60s linear infinite;
     pointer-events: none;
 }
 
 @keyframes rotate {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
 .heroContainer {
@@ -35,24 +30,78 @@
     z-index: 10;
     text-align: center;
     max-width: 900px;
+    padding: 0 1.5rem;
 }
 
 .hero h1 {
-    font-size: clamp(3rem, 6vw, 5rem);
-    color: var(--color-primary);
-    margin-bottom: 2rem;
-    line-height: 1.1;
+    font-size: clamp(2rem, 5vw, 4rem);
+    color: white;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    font-weight: 700;
     letter-spacing: -1px;
 }
 
 .subtitle {
-    font-size: clamp(1rem, 2vw, 1.25rem);
-    color: var(--color-primary-light);
+    font-size: clamp(0.95rem, 2vw, 1.2rem);
+    color: rgba(255, 255, 255, 0.85);
     max-width: 700px;
-    margin: 0 auto;
-    line-height: 1.6;
+    margin: 0 auto 2rem;
+    line-height: 1.7;
     opacity: 0;
     animation-delay: 0.3s;
+}
+
+.tagline {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 1rem;
+    opacity: 0;
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+.ctaButtons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    opacity: 0;
+    animation: fadeIn 0.8s ease-out 0.5s forwards;
+}
+
+.btnPrimary,
+.btnSecondary {
+    padding: 0.9rem 1.8rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btnPrimary {
+    background-color: #e8c547;
+    color: var(--color-primary);
+    border: 2px solid #e8c547;
+}
+
+.btnPrimary:hover {
+    background-color: #d4b23a;
+    border-color: #d4b23a;
+}
+
+.btnSecondary {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.btnSecondary:hover {
+    background-color: white;
+    color: var(--color-primary);
 }
 
 .fadeBottom {
@@ -60,6 +109,27 @@
     bottom: 0;
     left: 0;
     right: 0;
-    height: 100px;
+    height: 80px;
     background: linear-gradient(to top, var(--color-bg), transparent);
+}
+
+@media (max-width: 600px) {
+    .hero {
+        min-height: 80vh;
+        padding-top: calc(var(--header-height) + 1rem);
+    }
+    
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .btnPrimary,
+    .btnSecondary {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.85rem;
+    }
+    
+    .tagline {
+        font-size: 0.75rem;
+    }
 }

@@ -1,40 +1,40 @@
 .statsSection {
-    background-color: var(--color-bg);
+    background-color: var(--color-bg-alt);
+    padding: 4rem 0;
 }
 
 .statsContainer {
-    display: flex;
-    gap: 4rem;
-    align-items: flex-start;
-}
-
-@media (max-width: 768px) {
-    .statsContainer {
-        flex-direction: column;
-        gap: 3rem;
-    }
+    text-align: center;
 }
 
 .header {
-    flex: 1;
-    max-width: 400px;
+    max-width: 700px;
+    margin: 0 auto 3rem;
+    padding: 0 1rem;
 }
 
 .header h2 {
-    font-size: 3rem;
-    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
 .header p {
+    font-size: 1rem;
     color: var(--color-text-muted);
-    font-size: 1.05rem;
+    line-height: 1.6;
 }
 
 .grid {
-    flex: 1.5;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 3rem 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+@media (max-width: 900px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
 }
 
 @media (max-width: 500px) {
@@ -44,19 +44,45 @@
 }
 
 .statItem {
-    border-top: 2px solid var(--color-primary);
-    padding-top: 1rem;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.statItem:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
 .statItem h3 {
-    font-size: 3.5rem;
-    line-height: 1;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-primary);
     margin-bottom: 0.5rem;
-    letter-spacing: -2px;
 }
 
 .statItem p {
     font-size: 0.85rem;
     color: var(--color-text-muted);
-    font-weight: 500;
+    line-height: 1.4;
+}
+
+@media (max-width: 500px) {
+    .statsSection {
+        padding: 3rem 0;
+    }
+    
+    .header h2 {
+        font-size: 1.6rem;
+    }
+    
+    .statItem {
+        padding: 1.2rem;
+    }
+    
+    .statItem h3 {
+        font-size: 1.8rem;
+    }
 }

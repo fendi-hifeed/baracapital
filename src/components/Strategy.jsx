@@ -2,48 +2,52 @@ import styles from "./Strategy.module.css";
 
 const strategies = [
     {
-        title: "Flagship Strategy",
-        type: "FOR INVESTORS",
-        tag: "US/Global"
+        title: "Debt Financing",
+        type: "PINJAMAN BERBUNGA",
+        desc: "Berbasis utang dengan bunga kompetitif untuk bisnis dengan arus kas stabil.",
+        icon: "💰"
     },
     {
-        title: "Flagship Accelerator",
-        type: "FOR FOUNDERS",
-        tag: "US/Global"
+        title: "Equity",
+        type: "KEPEMILIKAN SAHAM",
+        desc: "Investor mendapat porsi kepemilikan tanpa beban cicilan, cocok untuk startup.",
+        icon: "📊"
     },
     {
-        title: "VC Unlocked: Sandbox",
-        type: "PROGRAM",
-        tag: "Global"
+        title: "Revenue Sharing",
+        type: "BAGI PENDAPATAN",
+        desc: "Imbal hasil berdasarkan persentase pendapatan, fleksibel mengikuti performa bisnis.",
+        icon: "📈"
     },
     {
-        title: "Sustainable Growth",
-        type: "FOR ENABLERS",
-        tag: "Global"
+        title: "Syariah",
+        type: "MUDAHARABAH/MUSYARAKAH",
+        desc: "Berbasis bagi hasil sesuai prinsip Islam, bebas riba, dan transparan.",
+        icon: "🤝"
     }
 ];
 
 export default function Strategy() {
     return (
-        <section className={`section ${styles.strategySection}`}>
+        <section id="skema" className={`section ${styles.strategySection}`}>
             <div className={`container ${styles.strategyContainer}`}>
                 <div className={styles.intro}>
-                    <h2>Talent lives everywhere.<br />Capital and opportunity does not.</h2>
+                    <h2>Skema Pembiayaan Fleksibel</h2>
                     <p>
-                        We invest in founders and empower investors with a global mindset across sectors,
-                        geographies, and markets where our capital, global networks, and resources can unlock
-                        their potential to drive uncommon outcomes.
+                        Kami menyediakan berbagai pilihan skema pendanaan yang dapat disesuaikan 
+                        dengan kebutuhan bisnis Anda, mulai dari Rp 500 Juta hingga Rp 2 Miliar per proyek.
                     </p>
                 </div>
 
                 <div className={styles.cardList}>
                     {strategies.map((item, idx) => (
                         <div key={idx} className={styles.card}>
+                            <div className={styles.cardIcon}>{item.icon}</div>
                             <div className={styles.cardHeader}>
-                                <span className={styles.tag}>{item.tag}</span>
                                 <span className={styles.type}>{item.type}</span>
                             </div>
                             <h3>{item.title}</h3>
+                            <p>{item.desc}</p>
                         </div>
                     ))}
                 </div>

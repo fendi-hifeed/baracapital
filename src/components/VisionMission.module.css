@@ -1,0 +1,120 @@
+.vmSection {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 4rem 0;
+}
+
+.vmContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    text-align: left;
+}
+
+@media (max-width: 900px) {
+    .vmContainer {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+.vision,
+.mission {
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.vision h2,
+.mission h2 {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.vision h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background: #e8c547;
+    border-radius: 50%;
+}
+
+.mission h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background: #e8c547;
+    border-radius: 2px;
+}
+
+.vision p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.mission ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mission li {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.mission li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.5em;
+    width: 8px;
+    height: 8px;
+    background: #e8c547;
+    border-radius: 50%;
+}
+
+@media (max-width: 500px) {
+    .vmSection {
+        padding: 3rem 0;
+    }
+    
+    .vision,
+    .mission {
+        padding: 1.2rem;
+    }
+    
+    .vision h2,
+    .mission h2 {
+        font-size: 1.3rem;
+        padding-left: 1.2rem;
+    }
+    
+    .vision h2::before,
+    .mission h2::before {
+        width: 15px;
+        height: 15px;
+    }
+    
+    .vision p,
+    .mission li {
+        font-size: 0.9rem;
+    }
+}

@@ -1,10 +1,10 @@
 import styles from "./Stats.module.css";
 
 const stats = [
-    { label: "in AUM*", value: "$2.3B" },
-    { label: "cumulative portfolio valuation", value: "$300B+" },
-    { label: "startups backed", value: "3,000+" },
-    { label: "companies valued at $1B+", value: "35+" }
+    { label: "Kota/Kabupaten di Jawa Barat", value: "27" },
+    { label: "Maksimal Ticket Size per Proyek", value: "Rp 2M" },
+    { label: "Skema Pembiayaan Fleksibel", value: "4 Jenis" },
+    { label: "Tim Direksi Ahli", value: "5+" }
 ];
 
 export default function Stats() {
@@ -12,10 +12,10 @@ export default function Stats() {
         <section className={`section ${styles.statsSection}`}>
             <div className={`container ${styles.statsContainer}`}>
                 <div className={styles.header}>
-                    <h2>Putting performance to work</h2>
+                    <h2>Cakupan & Kapasitas Kami</h2>
                     <p>
-                        We drive sustainable innovation and growth locally and globally by fostering
-                        communities of entrepreneurs, investors, mentors, and operators.
+                        Bara Capital beroperasi di bawah jaringan HIPMI Jawa Barat dengan jangkauan 
+                        ke 27 kota/kabupaten dan kapasitas pembiayaan hingga Rp 2 Miliar per proyek.
                     </p>
                 </div>
 
@@ -27,9 +27,6 @@ export default function Stats() {
                         </div>
                     ))}
                 </div>
-            </div>
-            <div className="container" style={{ paddingTop: '2rem', fontSize: '0.75rem', color: 'var(--color-text-muted)' }}>
-                <p>* As of latest quarter estimates. For illustrative purposes.</p>
             </div>
         </section>
     );
