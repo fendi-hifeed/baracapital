@@ -13,22 +13,22 @@ const team = [
     },
     {
         name: "M. Mulki Nurhalim",
-        role: "Directeur Utama",
+        role: "Direktur Utama",
         desc: "Praktisi bisnis | Eksponen HIPMI Kota Bandung | Eks BEM Univ. Nurtanio Bandung"
     },
     {
         name: "Aditya Galih Utama",
-        role: "Directeur",
+        role: "Direktur",
         desc: "S2 Administrasi Bisnis SBM ITB | S2 Kenotariatan UNS | Spesialis pembiayaan skema perbankan"
     },
     {
         name: "Muhammad Ihsan Akhirulsyah",
-        role: "Directeur",
-        desc: "Ex Co-Founder & CFO eFishery (Startup Unicorn IoT) | Founder & CEO HiFeed | Lulusan Manajemen Univ. Padjadjaran"
+        role: "Direktur",
+        desc: "Serial Entrepreneur | Co-Founder & ex-CFO Unicorn Startup | Founder & CEO HiFeed"
     },
     {
         name: "Arya Shani Pradana",
-        role: "Directeur",
+        role: "Direktur",
         desc: "Founder Tekape Workspace | Pembicara Gerakan Nasional Literasi Digital Kemkominfo"
     }
 ];
