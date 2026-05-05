@@ -4,32 +4,32 @@ const team = [
     {
         name: "Wishnu Wijaya",
         role: "Komisaris Utama",
-        desc: "Ketua Bid. Investasi HIPMI Jawa Barat"
+        desc: "Ketua Umum BPC HIPMI Kota Bekasi 2022-2025 | Pengusaha di bidang travel & properti"
     },
     {
         name: "Ibrahim Imaduddin Islam",
         role: "Komisaris",
-        desc: "Ketua Umum BPC HIPMI Kota Bandung"
+        desc: "Ketua Umum BPC HIPMI Kota Bandung 2023-2026 | Perancang program inkubasi UMKM & business matching"
     },
     {
         name: "M. Mulki Nurhalim",
-        role: "Direktur Utama",
-        desc: "Anggota Bid. Investasi HIPMI Jawa Barat"
+        role: "Directeur Utama",
+        desc: "Praktisi bisnis | Eksponen HIPMI Kota Bandung | Eks BEM Univ. Nurtanio Bandung"
     },
     {
         name: "Aditya Galih Utama",
         role: "Directeur",
-        desc: "Pakar Pembiayaan Skema Perbankan"
+        desc: "S2 Administrasi Bisnis SBM ITB | S2 Kenotariatan UNS | Spesialis pembiayaan skema perbankan"
     },
     {
         name: "Muhammad Ihsan Akhirulsyah",
         role: "Directeur",
-        desc: "Pakar Raise Fund & Investor Global"
+        desc: "Ex Co-Founder & CFO eFishery (Startup Unicorn IoT) | Founder & CEO HiFeed | Lulusan Manajemen Univ. Padjadjaran"
     },
     {
         name: "Arya Shani Pradana",
         role: "Directeur",
-        desc: "Ketua Bid. Investasi HIPMI Kota Bandung"
+        desc: "Founder Tekape Workspace | Pembicara Gerakan Nasional Literasi Digital Kemkominfo"
     }
 ];
 
@@ -48,7 +48,7 @@ export default function Team() {
                 <div className={styles.header}>
                     <h2>Tim Manajemen</h2>
                     <p>
-                        Tim kami terdiri dari para profesional berpengalaman di bidang investasi, 
+                        Tim kami terdiri dari para profesional berpengalaman di bidang investasi,
                         perbankan, dan ekosistem bisnis Jawa Barat.
                     </p>
                 </div>
