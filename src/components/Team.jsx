@@ -7,9 +7,9 @@ const team = [
         desc: "Ketua Bid. Investasi HIPMI Jawa Barat"
     },
     {
-        name: "Ibrahim Imaduddin I.",
+        name: "Ibrahim Imaduddin Islam",
         role: "Komisaris",
-        desc: "Ketua Umum HIPMI Kota Bandung"
+        desc: "Ketua Umum BPC HIPMI Kota Bandung"
     },
     {
         name: "M. Mulki Nurhalim",
@@ -22,7 +22,7 @@ const team = [
         desc: "Pakar Pembiayaan Skema Perbankan"
     },
     {
-        name: "M. Ihsan Akhirulsyah",
+        name: "Muhammad Ihsan Akhirulsyah",
         role: "Directeur",
         desc: "Pakar Raise Fund & Investor Global"
     },
