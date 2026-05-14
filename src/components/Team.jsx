@@ -2,34 +2,24 @@ import styles from "./Team.module.css";
 
 const team = [
     {
-        name: "Wishnu Wijaya",
-        role: "Komisaris Utama",
-        desc: "Ketua Umum BPC HIPMI Kota Bekasi 2022-2025 | Pengusaha di bidang travel & properti"
+        name: "M. Mulki Nurhalim S.T., S.M., M.M.",
+        role: "Directeur Utama",
+        desc: "Linear academic & professional record in e-commerce & global supply chain | Co-Founder PT Modero Integra Asia | Founder & Directeur PT Primemoda Trend Asia | Co-Founder & Directeur PT Trend Wave Studio"
     },
     {
-        name: "Ibrahim Imaduddin Islam",
+        name: "Aditya Galih Utama BS., MBA.",
+        role: "Directeur",
+        desc: "MBA Business Strategy SBM ITB | Real Estate Development & Investment UI | Strategic Partnership Associate Temasek Foundation Singapore | Founder & Director PT Agrikultura Investama Sedaya | Commissioner PT Balai Lelang Murakapi & PT Agro Lestari Merbabu"
+    },
+    {
+        name: "Arya Shani Pradhana",
+        role: "Directeur",
+        desc: "BA (Hons) Business Administration International Business, University of East London | Founder & CEO PT Kantor Tekape Indonesia | Co-Founder & CEO PT Sinergi Entertainment Indonesia"
+    },
+    {
+        name: "Ibrahim Imaduddin Islam S.M.B, M.B.A",
         role: "Komisaris",
-        desc: "Ketua Umum BPC HIPMI Kota Bandung 2023-2026 | Perancang program inkubasi UMKM & business matching"
-    },
-    {
-        name: "M. Mulki Nurhalim",
-        role: "Direktur Utama",
-        desc: "Praktisi bisnis | Eksponen HIPMI Kota Bandung | Eks BEM Univ. Nurtanio Bandung"
-    },
-    {
-        name: "Aditya Galih Utama",
-        role: "Direktur",
-        desc: "S2 Administrasi Bisnis SBM ITB | S2 Kenotariatan UNS | Spesialis pembiayaan skema perbankan"
-    },
-    {
-        name: "Muhammad Ihsan Akhirulsyah",
-        role: "Direktur",
-        desc: "Serial Entrepreneur | Co-Founder & ex-CFO Unicorn Startup | Founder & CEO HiFeed"
-    },
-    {
-        name: "Arya Shani Pradana",
-        role: "Direktur",
-        desc: "Founder Tekape Workspace | Pembicara Gerakan Nasional Literasi Digital Kemkominfo"
+        desc: "MBA in Creative & Cultural Entrepreneurship | Founder & CEO Mavens Studio | Chairman HIPMI Kota Bandung | Ketua Bidang Investasi BPD HIPMI Jawa Barat 2025-2028 | Pengusaha Digital Media Services"
     }
 ];
 
