@@ -21,12 +21,7 @@ const team = [
         role: "Komisaris",
         desc: "MBA in Creative & Cultural Entrepreneurship | Founder & CEO Mavens Studio | Chairman HIPMI Kota Bandung | Ketua Bidang Investasi BPD HIPMI Jawa Barat 2025-2028 | Pengusaha Digital Media Services"
     },
-    {
-        name: "Muhammad Ihsan Akhirulsyah",
-        role: "Direktur",
-        desc: "Ex Co-Founder & CFO eFishery (Startup Unicorn IoT) | Founder & CEO HiFeed | Lulusan Manajemen Univ. Padjadjaran"
-    },
-    {
+{
         name: "Wishnu Wijaya",
         role: "Komisaris Utama",
         desc: "Ketua Bidang Investasi BPD HIPMI Jawa Barat 2025-2028 | Pengusaha Digital Media Services"
