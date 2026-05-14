@@ -27,10 +27,11 @@ Equity (Kepemilikan Saham): Investor mendapat porsi kepemilikan, tanpa beban cic
 Revenue Sharing (Bagi Pendapatan): Imbal hasil berdasarkan persentase pendapatan, fleksibel mengikuti performa bisnis.
 Syariah (Mudharabah/Musyarakah): Berbasis bagi hasil sesuai prinsip Islam, bebas riba, dan transparan.
 5. Tim Manajemen
+Komisaris Utama: Wishnu Wijaya (Ketua Bidang Investasi BPD HIPMI Jawa Barat 2025-2028 | Pengusaha Digital Media Services)
 Komisaris: Ibrahim Imaduddin Islam S.M.B, M.B.A (Chairman HIPMI Kota Bandung | Ketua Bidang Investasi BPD HIPMI Jawa Barat 2025-2028 | Pengusaha Digital Media Services)
-Directeur Utama: M. Mulki Nurhalim S.T., S.M., M.M. (Linear academic & professional record in e-commerce & global supply chain | Co-Founder PT Modero Integra Asia | Founder & Directeur PT Primemoda Trend Asia | Co-Founder & Directeur PT Trend Wave Studio)
-Directeur: Aditya Galih Utama BS., MBA. (MBA Business Strategy SBM ITB | Real Estate Development & Investment UI | Strategic Partnership Associate Temasek Foundation Singapore | Founder & Director PT Agrikultura Investama Sedaya | Commissioner PT Balai Lelang Murakapi & PT Agro Lestari Merbabu)
-Directeur: Arya Shani Pradhana (BA (Hons) Business Administration International Business, University of East London | Founder & CEO PT Kantor Tekape Indonesia | Co-Founder & CEO PT Sinergi Entertainment Indonesia)
+Direktur Utama: M. Mulki Nurhalim S.T., S.M., M.M. (Linear academic & professional record in e-commerce & global supply chain | Co-Founder PT Modero Integra Asia | Founder & Direktur PT Primemoda Trend Asia | Co-Founder & Direktur PT Trend Wave Studio)
+Direktur: Aditya Galih Utama BS., MBA. (MBA Business Strategy SBM ITB | Real Estate Development & Investment UI | Strategic Partnership Associate Temasek Foundation Singapore | Founder & Director PT Agrikultura Investama Sedaya | Commissioner PT Balai Lelang Murakapi & PT Agro Lestari Merbabu)
+Direktur: Arya Shani Pradhana (BA (Hons) Business Administration International Business, University of East London | Founder & CEO PT Kantor Tekape Indonesia | Co-Founder & CEO PT Sinergi Entertainment Indonesia)
 6. Proses Seleksi & Persyaratan KYC
 Tahapan Seleksi:
 Pengajuan Proyek -> 2. Pengumpulan 12 Dokumen KYC -> 3. Review Komite (Scoring oleh 4 Direksi) -> 4. Keputusan Investasi -> 5. Eksekusi & Monitoring.
