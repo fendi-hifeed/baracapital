@@ -1,5 +1,31 @@
 import styles from "./page.module.css";
 
+const portfolioTitle = "Pipeline Proyek | Bara Capital";
+const portfolioDescription = "Proyek aktif Bara Capital yang sedang dalam proses seleksi atau sudah mendapat pembiayaan, dengan nilai investasi mulai dari Rp 500 Juta hingga Rp 2 Miliar per proyek.";
+
+export const metadata = {
+    title: portfolioTitle,
+    description: portfolioDescription,
+    alternates: {
+        canonical: "/portfolio",
+    },
+    openGraph: {
+        type: "website",
+        siteName: "Bara Capital",
+        locale: "id_ID",
+        url: "/portfolio",
+        title: portfolioTitle,
+        description: portfolioDescription,
+        images: [{ url: "/logo.png", width: 500, height: 500, alt: "Bara Capital" }],
+    },
+    twitter: {
+        card: "summary",
+        title: portfolioTitle,
+        description: portfolioDescription,
+        images: ["/logo.png"],
+    },
+};
+
 const projects = [
     {
         name: "MBG - Makan Bergizi Gratis",
