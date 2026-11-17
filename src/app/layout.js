@@ -1,5 +1,4 @@
 import { Inter, Playfair_Display } from "next/font/google";
-import Script from "next/script";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -8,7 +7,6 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair" });
 
 const SITE_URL = "https://www.bara.capital";
-const GA_ID = "G-XY5XVVSXVK";
 
 const title = "Bara Capital | Platform Investasi & Pembiayaan Pengusaha Muda";
 const description = "Bara Capital adalah platform investasi dan pembiayaan yang memberdayakan pengusaha muda Jawa Barat untuk naik kelas melalui akses permodalan yang terstruktur, transparan, dan profesional.";
@@ -57,18 +55,6 @@ export default function RootLayout({ children }) {
         <Navbar />
         <main>{children}</main>
         <Footer />
-        <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${GA_ID}');
-          `}
-        </Script>
       </body>
     </html>
   );
